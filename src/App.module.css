@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    height: 6.8em;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3em;
+    gap: 1em;
+    align-items: center;
+}
+.icon{
+    height: 20px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95vw;
+}
+.logoImg{
+    height: 70px;
+}
+.links{
+    display: flex;
+    gap: 2em;
+}
+.btnHome, .btnStore, .btnCart{
+    font-size: 1em;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.648);
+    text-decoration: none;
+}
+
+
+.btnCart{
+    display: flex;
+}
+button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
