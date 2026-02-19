@@ -6,19 +6,17 @@ import Shoppage from './components/Shoppage'
 import Cartpage from './components/Cartpage'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 
-const router = createBrowserRouter(Routes, {
-  basename: "/ShoppingCart-OdinProject",
-  routes: [{
+const router = createBrowserRouter([
+  {
     path: '/',
     element: <App />,
     children: [
-      { index: true, element: <Homepage /> }, 
+      { index: true, element: <Homepage /> },
       { path: 'shop', element: <Shoppage /> },
       { path: 'cart', element: <Cartpage /> },
     ],
   },
-],
-})
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
